@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Dhoraj!!</title>
+<style>
+  body {
+    margin: 0; padding: 0; overflow: hidden;
+    background: radial-gradient(#000022, #000000);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+  }
+  h1 {
+    position: absolute; top: 40%;
+    width: 100%;
+    font-size: 3em;
+    color: #ffdd00;
+    text-shadow: 2px 2px 10px #ff0000;
+    animation: glow 1.5s infinite alternate;
+    z-index: 100;
+  }
+  @keyframes glow {
+    0% { text-shadow: 2px 2px 10px #ff0000; }
+    100% { text-shadow: 2px 2px 20px #ffff00; }
+  }
+  .hero {
+    position: absolute;
+    width: 100px;
+    animation: float 5s infinite alternate;
+    z-index: 50;
+  }
+  @keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50px); }
+  }
+</style>
+</head>
+<body>
+
+<h1>🎉 Happy Birthday Dhoraj!! 🎉</h1>
+
+<!-- Superheroes -->
+<img src="https://i.postimg.cc/SK1PQW1D/superman.png" class="hero" style="left: 10%; top: 60%;">
+<img src="https://i.postimg.cc/wvGxW06C/spiderman.png" class="hero" style="left: 25%; top: 55%;">
+<img src="https://i.postimg.cc/qRy6Q3wF/ben10.png" class="hero" style="left: 40%; top: 65%;">
+<img src="https://i.postimg.cc/FsKpzM0b/batman.png" class="hero" style="left: 55%; top: 60%;">
+<img src="https://i.postimg.cc/4NZk2rSj/ironman.png" class="hero" style="left: 70%; top: 55%;">
+<img src="https://i.postimg.cc/q7yWqJ0R/hulk.png" class="hero" style="left: 85%; top: 65%;">
+
+<!-- Fireworks JS -->
+<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.1.1/dist/fireworks.js"></script>
+<script>
+  const container = document.body;
+  const fireworks = new Fireworks(container, {
+    speed: 3,
+    acceleration: 1.05,
+    friction: 0.98,
+    gravity: 1.5,
+    particles: 100,
+    trace: 3,
+    explosion: 5
+  });
+  fireworks.start();
+</script>
+
+</body>
+</html>
